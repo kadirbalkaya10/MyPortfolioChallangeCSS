@@ -1,0 +1,98 @@
+/* Root color and spacing for all page and reuseable variables */
+
+
+:root {
+    --backgroundColorPrimary:#3f3f3f;
+    --backgroundColorSecondary:#435f97ee;
+    --fontColorPrimary:#eaeaea;
+    --fontColorSecondary:#435f97ee;
+}
+
+/* Universal selector , setting font family , and size */
+*{
+    font-family: "Zilla Slab", serif;
+    font-size: 16px;
+    color: var(--fontColorPrimary);
+    
+}
+
+
+/* Adding css for Navbar and logo */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    
+}
+
+
+header .logo {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+header .navBar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navBar ul li {
+    margin: 10px;
+    letter-spacing: 0.2em;
+    
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+/* Setting a background img for hero section  */
+.hero .container {
+    background-image: url(/assets/images/HeroWallPaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    top: -80px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .container h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    color: var(--fontColorPrimary);
+}
+
+.hero .container  p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+
+.hero .container button {
+    width: 200px;
+    color: var(--fontColorPrimary);
+    background-color: var(--backgroundColorSecondary);
+    border: 2px solid var(--fontColorPrimary);
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border-radius: 0.5em;
+}
+
+
+
