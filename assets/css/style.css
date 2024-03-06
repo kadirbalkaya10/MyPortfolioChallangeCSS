@@ -16,6 +16,10 @@
     
 }
 
+body {
+    background: linear-gradient(#2C2C6A, #32235C);
+}
+
 
 /* Adding css for Navbar and logo */
 
@@ -95,3 +99,51 @@ header .navBar ul li {
 
 
 
+
+
+/* Adding styles for About-me section */
+
+
+
+/* Setiing container wraps around all about me content to flex, to display by side */
+.container-aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 0.5em;
+}
+
+/* Left side of the section positining the element giving a space , to make sepearete visible we set border-right to white */
+.aboutMe-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-right:1em ;
+    border-right: 1px solid var(--fontColorPrimary);
+}
+
+.aboutMe-left h2 {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.aboutMe-left img {
+    padding: 1em;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+
+
+/*  Right side of the about me section, making adjustmant of a paraghraph*/
+
+.aboutMe-right p {
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.6em;
+    
+}
