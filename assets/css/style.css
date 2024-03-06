@@ -112,6 +112,7 @@ header .navBar ul li {
     align-items: center;
     padding: 2em;
     margin: 0.5em;
+    height: 100vh;
 }
 
 /* Left side of the section positining the element giving a space , to make sepearete visible we set border-right to white */
@@ -123,6 +124,7 @@ header .navBar ul li {
     padding: 1em;
     margin-right:1em ;
     border-right: 1px solid var(--fontColorPrimary);
+    width: 100%;
 }
 
 .aboutMe-left h2 {
@@ -145,5 +147,51 @@ header .navBar ul li {
     font-size: 14px;
     letter-spacing: .1em;
     line-height: 1.6em;
+    width: 100%;
     
+}
+
+
+
+
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 0.5em;
+    height: 100vh;
+}
+
+.work-leftSide {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin-right:1em ;
+    border-right: 1px solid var(--fontColorPrimary);
+    width: 100%;
+}
+.work-rightSide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+
+.work-rightSide img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 1em;
+    
+}
+
+.work-rightSide .img-infoBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
