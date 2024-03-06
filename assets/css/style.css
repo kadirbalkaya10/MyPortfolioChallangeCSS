@@ -23,8 +23,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100vw;
     height: 80px;
+    z-index: 1;
     
 }
 
@@ -59,9 +61,6 @@ header .navBar ul li {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
-    top: -80px;
-    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
