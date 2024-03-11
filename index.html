@@ -18,9 +18,9 @@
         <!-- Navigatin bar , with 3 list items to navigte to each section -->
         <nav class="navBar">
             <ul>
-                <li><a href="#" class="work">Work</a></li>
-                <li><a href="#" class="about-me">About Me</a></li>
-                <li><a href="#" class="contanct">Contanct</a></li>
+                <li><a href="#work" class="work">Work</a></li>
+                <li><a href="#about-me" class="about-me">About Me</a></li>
+                <li><a href="#contanct" class="contanct">Contanct</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +36,7 @@
     <!-- Main content i want to show the user -->
     <main class="main">
         <!-- Information about my self -->
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <!-- Left side of the section where it contains heading and avatar photo -->
             <div class="container-aboutMe">
                 <div class="aboutMe-left">
@@ -49,7 +49,7 @@
             </div>
         </section>
         <!-- Section work is the,project we did , or we wil -->
-        <section class="work">
+        <section class="work" id="work">
             <!-- Container wraps around everything -->
             <div class="work-container">
                 <!-- Left side of the section -->
@@ -82,8 +82,22 @@
             </div>
         </section>
         <!-- Links to my accounts -->
-        <section class="Contanct"></section>
+        <section class="contanct" id="contanct">
+            <div class="contanct-container">
+                <div class="contanct-leftside">
+                    Contanct Information
+                </div>
+                <div class="contanct-rightside">
+                    <ul>
+                       <li><a href="https://github.com/kadirbalkaya10"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                       <li><a href="#"><i class="fa-regular fa-envelope fa-2xl"></i></a></li>
+                       <li><a href="#"><i class="fa-brands fa-gitlab fa-2xl"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/dbbdaa7a1d.js" crossorigin="anonymous"></script>
 </body>
 </html>

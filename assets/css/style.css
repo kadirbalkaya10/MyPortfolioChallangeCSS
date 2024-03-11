@@ -12,6 +12,7 @@
   font-family: 'Zilla Slab', serif;
   font-size: 16px;
   color: var(--fontColorPrimary);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -194,4 +195,53 @@ header .navBar ul li {
   width: 150px;
   height: 20px;
   border-radius: 10px;
+}
+
+/* Contanct Section  */
+
+.contanct {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contanct-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Contanct left side */
+
+.contanct-leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-right: 1em;
+  border-right: 1px solid var(--fontColorPrimary);
+  width: 100%;
+  font-size: 1.5em;
+}
+
+/* Contanct right side */
+
+.contanct-rightside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contanct-rightside ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contanct-rightside ul li i {
+  margin: 30px;
 }
