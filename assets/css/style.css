@@ -1,197 +1,197 @@
 /* Root color and spacing for all page and reuseable variables */
 
-
 :root {
-    --backgroundColorPrimary:#3f3f3f;
-    --backgroundColorSecondary:#435f97ee;
-    --fontColorPrimary:#eaeaea;
-    --fontColorSecondary:#435f97ee;
+  --backgroundColorPrimary: #3f3f3f;
+  --backgroundColorSecondary: #435f97ee;
+  --fontColorPrimary: #eaeaea;
+  --fontColorSecondary: #435f97ee;
 }
 
 /* Universal selector , setting font family , and size */
-*{
-    font-family: "Zilla Slab", serif;
-    font-size: 16px;
-    color: var(--fontColorPrimary);
-    
+* {
+  font-family: 'Zilla Slab', serif;
+  font-size: 16px;
+  color: var(--fontColorPrimary);
 }
 
 body {
-    background: linear-gradient(#2C2C6A, #32235C);
+  background: linear-gradient(#2c2c6a, #32235c);
 }
-
 
 /* Adding css for Navbar and logo */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    height: 80px;
-    z-index: 1;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  z-index: 1;
 }
 
-
 header .logo {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 header .navBar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .navBar ul li {
-    margin: 10px;
-    letter-spacing: 0.2em;
-    
+  margin: 10px;
+  letter-spacing: 0.2em;
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
+  position: relative;
 }
 /* Setting a background img for hero section  */
 .hero .container {
-    background-image: url(/assets/images/HeroWallPaper.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-image: url('/assets/images/HeroWallPaper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero .container h1 {
-    font-size: 5rem;
-    letter-spacing: 0.1em;
-    font-weight: bolder;
-    margin-bottom: 1em;
-    color: var(--fontColorPrimary);
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: var(--fontColorPrimary);
 }
 
-.hero .container  p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+.hero .container p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
-
-
 
 .hero .container button {
-    width: 200px;
-    color: var(--fontColorPrimary);
-    background-color: var(--backgroundColorSecondary);
-    border: 2px solid var(--fontColorPrimary);
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    border-radius: 0.5em;
+  width: 200px;
+  color: var(--fontColorPrimary);
+  background-color: var(--backgroundColorSecondary);
+  border: 2px solid var(--fontColorPrimary);
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border-radius: 0.5em;
 }
-
-
-
-
 
 /* Adding styles for About-me section */
 
-
-
 /* Setiing container wraps around all about me content to flex, to display by side */
-.container-aboutMe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-    margin: 0.5em;
-    height: 100vh;
+.container-aboutMe {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  margin: 0.5em;
+  height: 100vh;
 }
 
 /* Left side of the section positining the element giving a space , to make sepearete visible we set border-right to white */
 .aboutMe-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    margin-right:1em ;
-    border-right: 1px solid var(--fontColorPrimary);
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-right: 1em;
+  border-right: 1px solid var(--fontColorPrimary);
+  width: 100%;
 }
 
 .aboutMe-left h2 {
-    padding: 1em;
-    font-size: 1.5em;
+  padding: 1em;
+  font-size: 1.5em;
 }
 
 .aboutMe-left img {
-    padding: 1em;
-    width: 200px;
-    border-radius: 50%;
-    
+  padding: 1em;
+  width: 200px;
+  border-radius: 50%;
 }
-
 
 /*  Right side of the about me section, making adjustmant of a paraghraph*/
 
 .aboutMe-right p {
-    font-weight: lighter;
-    font-size: 14px;
-    letter-spacing: .1em;
-    line-height: 1.6em;
-    width: 100%;
-    
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1.6em;
+  width: 100%;
 }
 
-
-
-
+/* Work Section */
 
 .work-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-    margin: 0.5em;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 2em;
+  margin: 0.5em;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+/* Left-side of the section */
 .work-leftSide {
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    margin-right:1em ;
-    border-right: 1px solid var(--fontColorPrimary);
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  border-right: 1px solid var(--fontColorPrimary);
+  width: 35%;
+  height: 100%;
+  font-size: 1.5em;
 }
+
+/* Right-side of the section */
 .work-rightSide {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.work-rightSide img {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    margin: 1em;
-    
+.work-rightSide .img-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.work-rightSide .img-infoBox {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.img-card img {
+  height: 300px;
+  width: 300px;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+/* Project info span */
+.img-card span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  left: 30px;
+  background-color: var(--backgroundColorPrimary);
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
 }
